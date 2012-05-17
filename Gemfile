@@ -36,4 +36,5 @@ group :staging, :production do
   gem 'omniauth-facebook'
   gem 'airbrake'
   gem 'uglifier', '>= 1.0.3'
+  gem 'thor'
 end
