@@ -25,9 +25,9 @@ end
 gem 'jquery-rails'
 
 #gem 'capistrano'
-group :development, :test do
+  group :development, :test do
   gem 'sqlite3', '1.3.6'
-  gem 'rspec-rails'
+  #gem 'rspec-rails'
 end
 group :staging, :production do
   gem 'thin'
