@@ -1,0 +1,60 @@
+#body {background: #FFFFFF;
+	  color: #000;
+	  font-family: Helvetica; sans-serif;}
+	  
+#container{width: 750px; 
+		   margin: auto;} 
+	  
+#header{height: 90px; padding: 20px;}
+
+#logo {width: 300px; float: left;}
+#logo h1{text-indent: -9999px;}
+
+#slogan{ width: 410px; float: left; margin-top: -20px;}
+#slogan h2{text-indent: -9999px;}
+
+#nav{ width: 710px; padding: 5px 20px 5px 20px; background-color: #f64c1e; font-size: 14px; -webkit-box-shadow: 0 2px 3px #bababa; -moz-box-shadow: 0 2px 3px #bababa;	box-shadow: 0 2px 3px #bababa;
+}
+#nav li{display: inline;}
+#nav li a{ color: #fff; text-decoration: none; line-height: 25px; padding: 0 50px 0 50px;}
+
+/*
+#nav li#prayers a{background-image: url(imgs/prayers.png);
+									   background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+*/
+#nav li#prayers a{ /*background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px;*/ background-image: url(prayers.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#nav li#worldwide a{background-image: url(ww.png);
+									   background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#nav li#settings a{background-image: url(settings.png);
+									   background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#nav li#donate a{background-image: url(donate.png);
+									   background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+									   
+
+#nav li#prayers a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(prayers2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#nav li#worldwide a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(ww2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#nav li#settings a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(settings2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#nav li#donate a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; }
+#name {background-color: #fff}
+#avatar {background-color: #FFFFFF}
+
+
+#newprayer{ margin: 25px 20px 0 20px;}
+.textarea{width: 568px; height: 49px; border: 3px solid #f64c1e; padding: 15px; font-size: 14px; color:#6b6b6b; float: left;}
+#newprayer input#submit { width:170px;height: 92px; background:url(submit.png) 0px 0px repeat-x; outline:none; border:none;  color:#fff; text-shadow: 0px 1px 0px rgba(0,0,0,0.3); cursor:pointer; padding: 4px; float: left; font-size: 24px;}
+#newprayer input#submit:hover{ background:url(submit2.png) 0px 0px repeat-x;}
+#newprayer input#submit:active{ background:url(submit3.png) 0px 0px repeat-x;}
+
+#news{width: 680px; height: 25px; margin: 20px 20px 0 20px; background-color: #f64c1e; float: left; color: #fff; font-size: 14px; padding: 5px 5px 5px 10px;}
+#news li{display: inline; line-height: 25px;}
+#news li a{color: #fff; text-decoration: none; padding: 0 125px 0 125px;}
+#news li a:hover{ background-color: #fff; padding: 5px 125px 5px 125px; color:#f64c1e;}
+#news li#myavatar a{background-image: url(avatar.png);
+									   background-repeat: no-repeat; background-position-y: center; background-position-x: 85px; padding: 7px 125px 8px 125px;color:#f64c1e; background-color: #fff;}  #news li#myavatar a:hover{color:#f64c1e;}
+									   
+#news li#fp a{background-image: url(frieds.png);
+									   background-repeat: no-repeat; background-position-y: center; background-position-x: 85px; padding: 7px 125px 8px 125px;}
+#news li#fp a:hover{background-image: url(frieds2.png);
+									   background-repeat: no-repeat; background-position-y: center; background-position-x: 85px; padding: 7px 125px 8px 125px;}
+#payments{background-color:#FFFFFF}					
+									   

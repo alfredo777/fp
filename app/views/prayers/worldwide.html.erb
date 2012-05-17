@@ -1,0 +1,36 @@
+<%= form_for(@prayer=Prayer.new) do |f| %>
+ <div class="field">
+    <%= f.text_area :pray, :class => "textarea"%>
+ 
+ 
+<%=f.submit "Share Pray",:class => "btn btn-info btn-large" %>
+<%end%>
+<div id="name">
+
+<link rel="stylesheet" href="app/stileshets/reset.css" type="text/css"/>
+<link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
+
+
+
+
+<table>
+  <tr>
+   <h2><th>Prays</th></h2> 
+    
+  </tr>
+<% @prayers.each do |prayer| %>
+  <tr>
+   
+    <td><%= image_tag(prayer.image) %> </td>
+    <td>Pray:<%= prayer.pray %><br>
+    	     <PRE>  By:<%= prayer.name %> </PRE></td>
+  
+  </tr>
+  
+<% end %>
+</table>
+<br />
+</div>
+<div class="pagination">
+<center><%= paginate @prayers%></center>
+</div>
