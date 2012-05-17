@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
   has_many :prayers
   has_many :sessions
-  has_one :religiou
   def self.create_with_omniauth(omniauth)
     
    create! do |user|
