@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
          user = User.find_by_provider_and_uid(omniauth["provider"], omniauth["uid"]) || User.create_with_omniauth(omniauth)
          session[:user_id] = user.id
          current_user.save
-         redirect_to https://severe-flower-1979.herokuapp.com/prayers, :notice => "Signed in!"
+         redirect_to prayers_url, :notice => "Signed in!"
                
   
   end

@@ -18,12 +18,10 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem "tilt", "~> 1.3.3"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
-
 #gem 'capistrano'
   group :development, :test do
   gem 'sqlite3', '1.3.6'
