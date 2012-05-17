@@ -20,13 +20,6 @@ ActiveRecord::Schema.define(:version => 20120322174656) do
     t.datetime "updated_at",             :null => false
   end
 
-  create_table "payments", :force => true do |t|
-    t.string   "title"
-    t.integer  "amount"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "prayers", :force => true do |t|
     t.text     "pray"
     t.datetime "created_at", :null => false
@@ -35,12 +28,6 @@ ActiveRecord::Schema.define(:version => 20120322174656) do
     t.integer  "user_id"
     t.string   "image"
     t.string   "name"
-  end
-
-  create_table "religious", :force => true do |t|
-    t.string   "religioous_administration"
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
   end
 
   create_table "users", :force => true do |t|

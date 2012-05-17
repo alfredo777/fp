@@ -18,7 +18,6 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem "tilt", "~> 1.3.3"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -38,4 +37,5 @@ group :staging, :production do
   gem 'omniauth'
   gem 'omniauth-facebook'
   gem 'airbrake'
+  gem 'uglifier', '>= 1.0.3'
 end
