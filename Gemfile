@@ -35,5 +35,7 @@ group :staging, :production do
   gem 'heroku'
   gem "pg"
   gem 'therubyracer'
+  gem 'omniauth'
+  gem 'omniauth-facebook'
   gem 'airbrake'
 end
