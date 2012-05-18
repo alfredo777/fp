@@ -11,13 +11,13 @@
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 
 
-<table style="width:600px">
-  <tr style="width:60px">
+<table style="width:600px border:solid">
+  <tr style="width:60px border:solid">
    <h2><th>Prays</th></h2> 
     
   </tr>
 <% @prayers.each do |prayer| %>
-  <tr style="width:540px">
+  <tr style="width:540px border:solid">
    
     <td><%= image_tag(prayer.image) %> </td>
     <td>Pray:<%= prayer.pray %><br>
