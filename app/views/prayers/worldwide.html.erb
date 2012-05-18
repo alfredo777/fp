@@ -10,20 +10,20 @@
 <link rel="stylesheet" href="app/stileshets/reset.css" type="text/css"/>
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 <%end%>
-<div class="container">
-  <div class="row">
-    <div class="span6">
-
 <% @prayers.each do |prayer| %>
-<div style="with:200; display:block;">
-    <div style="floating:left">
-    <%= image_tag(prayer.image) %>
-    </div>
-    <div>
-     Pray:<%= prayer.pray %><br>
-    	     <PRE>  By:<%= prayer.name %> </PRE>
-    </div> 
-</div> 
+<div class="thumb-wrap">
+   <div style="clear: both">	 
+        <div class="img">
+             <%= image_tag(prayer.image) %>
+        </div>
+        <span>
+           Pray:<%= prayer.pray %><br>
+	    	     
+        </span>
+           <PRE>  By:<%= prayer.name %> </PRE>
+    </div>
+</div>
+
 <% end %>
 
 </div>

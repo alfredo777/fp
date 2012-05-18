@@ -56,5 +56,16 @@
 									   background-repeat: no-repeat; background-position-y: center; background-position-x: 85px; padding: 7px 125px 8px 125px;}
 #news li#fp a:hover{background-image: url(frieds2.png);
 									   background-repeat: no-repeat; background-position-y: center; background-position-x: 85px; padding: 7px 125px 8px 125px;}
-#payments{background-color:#FFFFFF}					
+#payments{background-color:#FFFFFF}		
+
+.thumb-wrap{
+    padding: 2px 12px 12px 12px ;
+    min-height: 110px;
+    overflow:hidden;
+    clear: both;
+}
+.img{
+    float:left;
+    padding:5px;
+}			
 									   
