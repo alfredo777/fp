@@ -26,7 +26,11 @@
 </br>
 <div id="user_nav">
   <% if current_user %>
-   <h2> Welcome: <%= current_user.name %>!          
+
+   <h2> Welcome: <%= current_user.name %>! 
+	<div btn class=" btn btn-danger"> 
+	<%= link_to "Sign out", "/signout" %>   
+	</div>     
    	<div class=" btn btn-info">
    	<div id="friends">
      <p><%= link_to "Invite Friends", "#", :id => "invite_fb_friends"  %></p>
@@ -53,8 +57,9 @@
    </div>
    </h2>
   <% else %>
+  <div btn class=" btn btn-success"> 
     <%= link_to "Sign in with Facebook", "/auth/facebook" %>
- 
+  </div>
   
 
   <% end %>
