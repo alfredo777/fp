@@ -24,7 +24,7 @@
     <th></th>
   </tr>
 
-<% @prayers.each do |prayer|, :class =>'span8' %>
+<% @prayers.each do |prayer|%>
   <tr>
   	<td><%= image_tag(current_user.image) %></td>
     <td><%= prayer.pray %></td>

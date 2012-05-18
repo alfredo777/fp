@@ -3,7 +3,8 @@
 	  font-family: Helvetica; sans-serif;}
 	  
 #container{width: 750px; 
-		   margin: auto;} 
+		   margin: auto;
+		   width:660px;} 
 	  
 #header{height: 90px; padding: 20px;}
 
