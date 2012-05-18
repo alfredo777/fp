@@ -4,21 +4,23 @@
  
  
 <%=f.submit "Share Pray",:class => "btn btn-info btn-large" %>
-
+</div>
 <div id="name">
 
 <link rel="stylesheet" href="app/stileshets/reset.css" type="text/css"/>
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 <%end%>
-
-<table style="width:600px border:solid">
-  <tr style="width:60px border:solid">
+<div class="container">
+  <div class="row">
+    <div class="span6">
+<table>
+  <tr>
    <h2><th>Prays</th></h2> 
     
   </tr>
 <% @prayers.each do |prayer| %>
-  <tr style="width:540px border:solid">
-    <div style="width:540px margin:auto">
+  <tr>
+    <div>
     <td><%= image_tag(prayer.image) %> </td>
     <td>Pray:<%= prayer.pray %><br>
     	     <PRE>  By:<%= prayer.name %> </PRE></td>
@@ -27,6 +29,8 @@
   
 <% end %>
 </table>
+</div>
+</div>
 </div>
 </div>
 <br />
