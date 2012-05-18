@@ -60,10 +60,10 @@
 
 .thumb-wrap{
     padding: 2px 12px 12px 12px ;
-    min-height: 110px;
+    min-height:10px;
     overflow:hidden;
     clear: both;
-    width:700px;
+    width:710px;
 }
 .img{
     float:left;
