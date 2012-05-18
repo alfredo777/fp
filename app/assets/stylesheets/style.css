@@ -63,6 +63,7 @@
     min-height: 110px;
     overflow:hidden;
     clear: both;
+    width:200px;
 }
 .img{
     float:left;
