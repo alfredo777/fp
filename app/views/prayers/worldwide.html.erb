@@ -13,22 +13,19 @@
 <div class="container">
   <div class="row">
     <div class="span6">
-<table>
-  <tr>
-   <h2><th>Prays</th></h2> 
-    
-  </tr>
+
 <% @prayers.each do |prayer| %>
-  <tr>
-    <div style="width:100">
-    <td><%= image_tag(prayer.image) %> </td>
-    <td>Pray:<%= prayer.pray %><br>
-    	     <PRE>  By:<%= prayer.name %> </PRE></td>
+<div style="with:200">
+    <div style="floating:left">
+    <%= image_tag(prayer.image) %>
     </div>
-  </tr>
-  
+    <div>
+     Pray:<%= prayer.pray %><br>
+    	     <PRE>  By:<%= prayer.name %> </PRE>
+    </div> 
+</div> 
 <% end %>
-</table>
+
 </div>
 </div>
 </div>
