@@ -14,12 +14,13 @@
 <div class="thumb-wrap">
    <div style="clear: both">	     
         <pre class="pray">
-	    <div class="img"> <%= image_tag(prayer.image) %> Pray:<%= prayer.pray %><br></div>	    	     
+	    <div class="img"> <%= image_tag(prayer.image) %> Pray:<%= prayer.pray %></div>	    	     
         </pre>
         <pre>By:<%= prayer.name %> </pre>
     </div>
 </div>
 <% end %>
 <br />
-<center><%= paginate @prayers%></center>
+
 </div>
+<center><%= paginate @prayers%></center>

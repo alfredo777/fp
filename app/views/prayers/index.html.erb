@@ -12,26 +12,15 @@
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 
 <%end%>
-<div class="container">
-  <div class="row">
-    <div class="span6">
-<table>
-  <tr>
-    <th>Pray</th>
-  </tr>
-
 <% @prayers.each do |prayer|%>
-  <tr>
-  <div>
-  	<td><%= image_tag(current_user.image) %></td>
-    <td><%= prayer.pray %></td>
-    <td><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></td>
-  </div>
- </tr>
+<div class="thumb-wrap">
+   <div style="clear: both">	     
+    <pre class="pray">
+  	<pre> <div class="img"><%= image_tag(current_user.image) %><%= prayer.pray %></pre>
+    <div class="btn btn-danger"><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></div>
+   </div>
+</div>
 <% end %>
-</div>
-</div>
-</div>
 </div>
 <center>
 <br />	
