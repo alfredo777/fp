@@ -1,9 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-    before_filter :authorize
     helper_method :current_user
-      helper_method :current_user_name
-      helper_method :current_user_image
+       helper_method :current_user_name
+       helper_method :current_user_image
+    before_filter :authorize
+   
   
   private
   

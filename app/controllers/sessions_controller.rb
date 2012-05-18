@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
          omniauth = request.env["omniauth.auth"]
          user = User.find_by_provider_and_uid(omniauth["provider"], omniauth["uid"]) || User.create_with_omniauth(omniauth)
          session[:user_id] = user.id
-         current_user.save
          redirect_to prayers_url, :notice => "Signed in!"
                
   
