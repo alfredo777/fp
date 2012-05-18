@@ -1,2 +1,5 @@
-
+<% if current_user :session => :true %>
+<%redirect_to "prayers" %>
+<%else%>
+"Please login"
    
