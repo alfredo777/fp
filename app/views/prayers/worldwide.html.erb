@@ -11,18 +11,18 @@
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 <%end%>
 
-<table>
-  <tr>
+<table style="width:600px border:solid">
+  <tr style="width:60px border:solid">
    <h2><th>Prays</th></h2> 
     
   </tr>
 <% @prayers.each do |prayer| %>
-  <tr>
-   
+  <tr style="width:540px border:solid">
+    <div style="width:540px margin:auto">
     <td><%= image_tag(prayer.image) %> </td>
     <td>Pray:<%= prayer.pray %><br>
     	     <PRE>  By:<%= prayer.name %> </PRE></td>
-  
+    </div>
   </tr>
   
 <% end %>

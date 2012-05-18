@@ -20,10 +20,12 @@
 
 <% @prayers.each do |prayer|%>
   <tr style="width:540px border:solid">
+  <div style="width:540px margin:auto">
   	<td><%= image_tag(current_user.image) %></td>
     <td><%= prayer.pray %></td>
     <td><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  </div>
+ </tr>
 <% end %>
 </div>
 </div>
