@@ -16,7 +16,7 @@
 <CENTER>
 <div class="row-fluid">
 <div class="span8">
-<table border="1" width="580">
+<table class="span8">
   <tr>
     <th>Pray</th>
     <th></th>
@@ -24,7 +24,7 @@
     <th></th>
   </tr>
 
-<% @prayers.each do |prayer| %>
+<% @prayers.each do |prayer|, :class =>'span8' %>
   <tr>
   	<td><%= image_tag(current_user.image) %></td>
     <td><%= prayer.pray %></td>

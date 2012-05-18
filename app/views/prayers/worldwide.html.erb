@@ -16,12 +16,12 @@
 <div class="row-fluid">
 <div class="span8">
 
-<table border="1" width="580">
+<table class="span8">
   <tr>
    <h2><th>Prays</th></h2> 
     
   </tr>
-<% @prayers.each do |prayer| %>
+<% @prayers.each do |prayer|, :class => "span8" %>
   <tr>
    
     <td><%= image_tag(prayer.image) %> </td>
