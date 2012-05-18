@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
          omniauth = request.env["omniauth.auth"]
          user = User.find_by_provider_and_uid(omniauth["provider"], omniauth["uid"]) || User.create_with_omniauth(omniauth)
          session[:user_id] = user.id
-         redirect_to "http://severe-flower-1979.herokuapp.com/prayers" , :notice => "Signed in!"
+         redirect_to http://severe-flower-1979.herokuapp.com/prayers , :notice => "Signed in!"
                
   
   end
