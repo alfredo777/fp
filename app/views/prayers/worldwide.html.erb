@@ -11,18 +11,13 @@
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 
 
-<div class="container">
-<CENTER>
-<div class="row-fluid8">
-<div class="span8">
-
-<table class="span8">
-  <tr>
+<table width=600>
+  <tr width=60>
    <h2><th>Prays</th></h2> 
     
   </tr>
 <% @prayers.each do |prayer| %>
-  <tr>
+  <tr width=540>
    
     <td><%= image_tag(prayer.image) %> </td>
     <td>Pray:<%= prayer.pray %><br>
@@ -32,11 +27,6 @@
   
 <% end %>
 </table>
-</div>
-</CENTER>
-</div>
-</div>
-</div>
 </div>
 </div>
 <br />
