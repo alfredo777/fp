@@ -17,6 +17,7 @@
    <% @prayers.each do |prayer|%>
     <div class="img"> <%= image_tag(current_user.image) %> Pray:<%= prayer.pray%></div>
     <div class="btn btn-danger"><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></div>
+    <div style="color-background:#fff; heigth:1px; weigth:710:px;"></div>
 <% end %>
 </br>
 </pre>
