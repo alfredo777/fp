@@ -12,12 +12,14 @@
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 
 <%end%>
+<div class="imput-append">
 <pre>
    <% @prayers.each do |prayer|%>
     <%= image_tag(current_user.image) %> Pray:<%= prayer.pray%>
     <div class="btn btn-danger"><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></div>
 <% end %>
 </pre>
+</div>
 </div>
 <center>
 <br />	
