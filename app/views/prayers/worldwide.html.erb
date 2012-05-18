@@ -13,14 +13,13 @@
 <% @prayers.each do |prayer| %>
 <div class="thumb-wrap">
    <div style="clear: both">	 
-        <div class="img">
-             <%= image_tag(prayer.image) %>
-        </div>
+        
+             
+        
         <pre class="pray">
-          Pray:<%= prayer.pray %><br>
-	    	     
+	    <div class="img"> <%= image_tag(prayer.image) %> </div> Pray:<%= prayer.pray %><br>	    	     
         </pre>
-           <PRE>  By:<%= prayer.name %> </PRE>
+           <PRE>By:<%= prayer.name %> </PRE>
     </div>
 </div>
 
