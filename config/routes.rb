@@ -1,17 +1,17 @@
 Fp::Application.routes.draw do
+  root :to => 'home#index'
   
-  get "donate/prayer"
 
   resources :prayers
-
   get "home/index"
   get "donate"=>"donate#prayer"
   get "worldwide"=> "prayers#worldwide"
   get "settings"=> "users#settings"
- 
+  get "donate/prayer"
+  get "prayer"=>"prayers#index"
   
   
-  match "/auth/#{:provider}/callback" => "sessions#create"
+  match "/auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -62,7 +62,7 @@ Fp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  
 
   # See how all your routes lay out with "rake routes"
 
