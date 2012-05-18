@@ -2,9 +2,8 @@
 	  color: #000;
 	  font-family: Helvetica; sans-serif;}
 	  
-#container{width: 750px; 
-		   margin: auto;
-		   width:660px;} 
+#container2{width: 750px; 
+		   margin: auto;} 
 	  
 #header{height: 90px; padding: 20px;}
 
@@ -14,28 +13,28 @@
 #slogan{ width: 410px; float: left; margin-top: -20px;}
 #slogan h2{text-indent: -9999px;}
 
-#nav{ width: 710px; padding: 5px 20px 5px 20px; background-color: #f64c1e; font-size: 14px; -webkit-box-shadow: 0 2px 3px #bababa; -moz-box-shadow: 0 2px 3px #bababa;	box-shadow: 0 2px 3px #bababa;
+#navs{ width: 710px; padding: 5px 20px 5px 20px; background-color: #f64c1e; font-size: 14px; -webkit-box-shadow: 0 2px 3px #bababa; -moz-box-shadow: 0 2px 3px #bababa;	box-shadow: 0 2px 3px #bababa;
 }
-#nav li{display: inline;}
-#nav li a{ color: #fff; text-decoration: none; line-height: 25px; padding: 0 50px 0 50px;}
+#navs li{display: inline;}
+#navs li a{ color: #fff; text-decoration: none; line-height: 25px; padding: 0 50px 0 50px;}
 
 /*
 #nav li#prayers a{background-image: url(imgs/prayers.png);
 									   background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
 */
-#nav li#prayers a{ /*background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px;*/ background-image: url(prayers.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
-#nav li#worldwide a{background-image: url(ww.png);
+#navs li#prayers a{ /*background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px;*/ background-image: url(prayers.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#navs li#worldwide a{background-image: url(ww.png);
 									   background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
-#nav li#settings a{background-image: url(settings.png);
+#navs li#settings a{background-image: url(settings.png);
 									   background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
-#nav li#donate a{background-image: url(donate.png);
+#navs li#donate a{background-image: url(donate.png);
 									   background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
 									   
 
-#nav li#prayers a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(prayers2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
-#nav li#worldwide a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(ww2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
-#nav li#settings a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(settings2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
-#nav li#donate a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; }
+#navs li#prayers a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(prayers2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#navs li#worldwide a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(ww2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#navs li#settings a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; background-image: url(settings2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
+#navs li#donate a:hover{ background-color: #fff; color:#f64c1e; padding: 8px 50px 9px 50px; }
 #name {background-color: #fff}
 #avatar {background-color: #FFFFFF}
 
