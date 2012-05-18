@@ -13,13 +13,13 @@
 
 <%end%>
 
-<table width=600>
-  <tr width=60>
+<table style="width:600px">
+  <tr style="width:60px">
     <th>Pray</th>
   </tr>
 
 <% @prayers.each do |prayer|%>
-  <tr width=540>
+  <tr style="width:540px">
   	<td><%= image_tag(current_user.image) %></td>
     <td><%= prayer.pray %></td>
     <td><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></td>
