@@ -12,24 +12,14 @@
 <%end%>
 <% @prayers.each do |prayer| %>
 <div class="thumb-wrap">
-   <div style="clear: both">	 
-        
-             
-        
+   <div style="clear: both">	     
         <pre class="pray">
-	    <div class="img"> <%= image_tag(prayer.image) %> </div> Pray:<%= prayer.pray %><br>	    	     
+	    <div class="img"> <%= image_tag(prayer.image) %> Pray:<%= prayer.pray %><br></div>	    	     
         </pre>
-           <PRE>By:<%= prayer.name %> </PRE>
+        <pre>By:<%= prayer.name %> </pre>
     </div>
 </div>
-
 <% end %>
-
-</div>
-</div>
-</div>
-</div>
 <br />
-<div>
 <center><%= paginate @prayers%></center>
 </div>
