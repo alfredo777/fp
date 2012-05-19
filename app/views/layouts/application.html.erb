@@ -24,6 +24,14 @@
 <li id="donate"><a href="donate">Donate</a></li>
 </ul></br>
 </br>
+<div id="fb-root"></div>
+<div class="fb-like" data-href="http://severe-flower-1979.herokuapp.com/" data-send="false" data-width="450" data-show-faces="false" data-action="recommend" data-font="verdana"></div>
+<meta property="og:title" content="Friend Prayer" />
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="http://severe-flower-1979.herokuapp.com/" />
+<meta property="og:image" content="http://severe-flower-1979.herokuapp.com/assets/logo-a012c0985dc6e1462f700ae11305e076.png" />
+<meta property="og:site_name" content="friend prayer" />
+<meta property="fb:admins" content="581307214" />
 <div id="user_nav">
   <% if current_user %>
 
@@ -59,16 +67,9 @@
   <% else %>
   <div btn class=" btn btn-success"> 
     <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+    
   </div>
-  <div id="fb-root"></div>
- <div class="fb-like" data-href="http://severe-flower-1979.herokuapp.com/" data-send="true"   data-width="450" data-show-faces="true" data-action="recommend" data-font="verdana"></div>
-</div>
-<meta property="og:title" content="Friend Prayer" />
-<meta property="og:type" content="" />
-<meta property="og:url" content="http://severe-flower-1979.herokuapp.com/" />
-<meta property="og:image" content="" />
-<meta property="og:site_name" content="friend prayer" />
-<meta property="fb:admins" content="581307214" />
+
  
   <% end %>
  
