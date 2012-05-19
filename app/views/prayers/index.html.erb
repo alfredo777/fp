@@ -16,7 +16,7 @@
 <p>
    <% @prayers.each do |prayer|%>
     <div class="img"><%= image_tag(current_user.image) %> Pray:<%= prayer.pray%></div>
-    <div class="btn btn-danger"><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></div>
+   <pre> <div class="btn btn-danger"><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></div></pre>
 <% end %>
 </br>
 </p>
