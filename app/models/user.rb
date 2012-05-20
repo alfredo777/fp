@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
       user.image = omniauth["info"]["image"]
       user.token = omniauth["credentials"]["token"]
    user.save
+   current_user.save
     end
    def self.create_from_hash!(hash)
      create(:name => hash['info']['name'])
