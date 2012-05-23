@@ -12,8 +12,9 @@ class User < ActiveRecord::Base
        if user.save        
          #format.html { redirect_to "/auth/:provider/callback", :notice => 'User wass full created' }
        else
-        format.html { redirect_to root_url, :notice => 'User not created' }
+        #format.html { redirect_to root_url, :notice => 'User not created' }
        end
+       return user
      end
      
     def self.create_from_hash!(hash)
