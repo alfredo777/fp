@@ -148,6 +148,7 @@ DEPENDENCIES
   omniauth
   omniauth-facebook
   pg
+  rack (~> 1.4.1)
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
   sqlite3 (= 1.3.6)

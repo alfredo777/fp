@@ -10,7 +10,6 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem "kaminari"
 gem 'jquery-rails'
-gem 'rack', '~> 1.3.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,8 +25,7 @@ end
 group :development, :test do
   gem 'sqlite3', '1.3.6'
   #gem 'rspec-rails'
-  gem 'rack', '~> 1.3.0'
-  gemspec
+  gem 'rack', '~> 1.4.1'
 end
 
 group :staging, :production do
