@@ -1,0 +1,12 @@
+apps:
+  production: evening-warrior
+development: &defaults
+  domain_url: http://localhost:3000
+  facebook_key:'236652113026256'
+  facebook_secret:'b5bb95a717cca28a8bad746ce9747985'
+test:
+  bundle_without: development:test
+  domain_url: http://apps.facebook.com/friend_prayer/
+  facebook_key:'236652113026256'
+  facebook_secret:'b5bb95a717cca28a8bad746ce9747985'
+  
