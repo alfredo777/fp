@@ -8,9 +8,8 @@ Fp::Application.routes.draw do
   get "worldwide"=> "prayers#worldwide"
   get "settings"=> "users#settings"
   get "donate/prayer"
-  get "prayer"=>"prayers#index"
   
-  
+  #authentification to the session in omniauth
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
   # The priority is based upon order of creation:

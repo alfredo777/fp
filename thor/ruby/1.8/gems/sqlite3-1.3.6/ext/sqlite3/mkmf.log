@@ -49,7 +49,7 @@ checked program was:
 "gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L.      -lsqlite3  -lruby -lsqlite3  -lpthread -ldl  "
 Undefined symbols for architecture x86_64:
   "_rb_proc_arity", referenced from:
-      _t in ccSiqArl.o
+      _t in ccG6Q6WV.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:
@@ -126,7 +126,7 @@ checked program was:
 "gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L.      -lsqlite3  -lruby -lsqlite3  -lpthread -ldl  "
 Undefined symbols for architecture x86_64:
   "_sqlite3_column_database_name", referenced from:
-      _t in ccOx0hHc.o
+      _t in cckw9QpS.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:
@@ -155,7 +155,7 @@ checked program was:
 "gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L.      -lsqlite3  -lruby -lsqlite3  -lpthread -ldl  "
 Undefined symbols for architecture x86_64:
   "_sqlite3_enable_load_extension", referenced from:
-      _t in ccaSZyR6.o
+      _t in ccHLeOb8.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:
@@ -184,7 +184,7 @@ checked program was:
 "gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L.      -lsqlite3  -lruby -lsqlite3  -lpthread -ldl  "
 Undefined symbols for architecture x86_64:
   "_sqlite3_load_extension", referenced from:
-      _t in ccNfIC2j.o
+      _t in cc8cDxo6.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:
