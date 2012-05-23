@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
    def self.create_with_omniauth(omniauth)
 
      def create do |user|
-       user.id=User.find[:id]
+       user.id
        user.provider = omniauth["provider"]
        user.uid = omniauth["uid"]
        user.name = omniauth["info"]["name"]
