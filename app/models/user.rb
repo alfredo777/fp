@@ -9,7 +9,11 @@ class User < ActiveRecord::Base
        user.name = omniauth["info"]["name"]
        user.image = omniauth["info"]["image"]
        user.token = omniauth["credentials"]["token"]
-      user.save
+       if user.save        
+         redirect_to "/auth/:provider/callback", :notice => 'User wass full created'
+       else
+         redirect_to root_url, :notice => 'User not created' 
+       end
      end
      
     def self.create_from_hash!(hash)
