@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
        user.image = omniauth["info"]["image"]
        user.token = omniauth["credentials"]["token"]
        if user.save        
-         format.html { redirect_to "/auth/:provider/callback", :notice => 'User wass full created' }
+         #format.html { redirect_to "/auth/:provider/callback", :notice => 'User wass full created' }
        else
         format.html { redirect_to root_url, :notice => 'User not created' }
        end
