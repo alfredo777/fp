@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
    has_many :prayers
    has_many :sessions
    def self.create_with_omniauth(omniauth)
+
+    create do |user|
        user.provider = omniauth["provider"]
        user.uid = omniauth["uid"]
        user.name = omniauth["info"]["name"]
@@ -15,5 +17,5 @@ class User < ActiveRecord::Base
     end
 
 
-   
+   end
 end
