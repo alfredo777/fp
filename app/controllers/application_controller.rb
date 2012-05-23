@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
     helper_method :current_user
        helper_method :current_user_name
        helper_method :current_user_image
+       helper_method :current_user_id
+       helper_method :current_user_uid
     before_filter :authorize
    
   
