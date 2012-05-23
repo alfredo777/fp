@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
    has_many :sessions
    def self.create_with_omniauth(omniauth)
 
-    create do |user|
+     def create do |user|
+       user.id=User.find[:id]
        user.provider = omniauth["provider"]
        user.uid = omniauth["uid"]
        user.name = omniauth["info"]["name"]
