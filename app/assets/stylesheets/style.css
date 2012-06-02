@@ -35,7 +35,7 @@
 #navs li#prayers a:hover{ background-color: #fff; color:#107277; padding: 8px 50px 9px 50px; background-image: url(prayers2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
 #navs li#worldwide a:hover{ background-color: #fff; color:#107277; padding: 8px 50px 9px 50px; background-image: url(ww2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
 #navs li#settings a:hover{ background-color: #fff; color:#107277; padding: 8px 50px 9px 50px; background-image: url(settings2.png); background-repeat: no-repeat; background-position-y: center; background-position-x: 28px;}
-#navs li#donate a:hover{ background-color: #fff; color:#95DEE2; padding: 8px 50px 9px 50px; }
+#navs li#donate a:hover{ background-color: #fff; color:#107277; padding: 8px 50px 9px 50px; }
 #name {background-color: #fff}
 #avatar {background-color: #FFFFFF}
 
