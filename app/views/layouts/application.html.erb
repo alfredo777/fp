@@ -1,21 +1,4 @@
 <!DOCTYPE html>
-<div class="modal hide" id="myModal">
-	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal">×</button>
-	   <b> Instrucciones</b>
-	  </div>
-	  <div class="modal-body">
-	 <p>1) Da click en el botón ingresar con facebook.</p>
-	 <p>  2) Ingresando en la sesión puedes colocar oraciones que aparecerán en tu perfil y en el worldwide. </p>
-	<p> 3) Las personas en la comunidad verán la oración y pedirán por ti.
-		</p>
-	  </div>
-	  <div class="modal-footer">
-	   	<div btn class=" btn btn-warning"> 
-		   <%= link_to "Ingresa con Facebook", "/auth/facebook" %>
-	   </div>
-	  </div>
-	</div>  
 </div>
 <html>
 <head>
@@ -24,6 +7,7 @@
   <link rel="stylesheet" href="app/stileshets/style.css" type="text/css" />
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "boostrap-modal" %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag "/favicon.ico" %>
 
@@ -116,3 +100,20 @@
 	  </div>
 	</div>  
 </div>
+<div class="modal hide" id="myModal">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal">×</button>
+	   <b> Instrucciones</b>
+	  </div>
+	  <div class="modal-body">
+	 <p>1) Da click en el botón ingresar con facebook.</p>
+	 <p>  2) Ingresando en la sesión puedes colocar oraciones que aparecerán en tu perfil y en el worldwide. </p>
+	<p> 3) Las personas en la comunidad verán la oración y pedirán por ti.
+		</p>
+	  </div>
+	  <div class="modal-footer">
+	   	<div btn class=" btn btn-warning"> 
+		   <%= link_to "Ingresa con Facebook", "/auth/facebook" %>
+	   </div>
+	  </div>
+	</div>
