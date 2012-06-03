@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <body>
 <%= form_for(@prayer=Prayer.new) do |f| %>
  <div class="field">
@@ -28,3 +30,5 @@
 <%= paginate @prayers%>
 </center>
 </body>
+<%= render :partial => "layouts/footer"%>
+</html>
