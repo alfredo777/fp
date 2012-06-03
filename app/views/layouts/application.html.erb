@@ -1,5 +1,22 @@
 <!DOCTYPE html>
-
+<div class="modal hide" id="myModal">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal">×</button>
+	   <b> Instrucciones</b>
+	  </div>
+	  <div class="modal-body">
+	 <p>1) Da click en el botón ingresar con facebook.</p>
+	 <p>  2) Ingresando en la sesión puedes colocar oraciones que aparecerán en tu perfil y en el worldwide. </p>
+	<p> 3) Las personas en la comunidad verán la oración y pedirán por ti.
+		</p>
+	  </div>
+	  <div class="modal-footer">
+	   	<div btn class=" btn btn-warning"> 
+		   <%= link_to "Ingresa con Facebook", "/auth/facebook" %>
+	   </div>
+	  </div>
+	</div>  
+</div>
 <html>
 <head>
   <title>FriendPrayer</title>
@@ -27,14 +44,6 @@
 <li id="donate"><a href="donate">Donate</a></li>
 </ul></br>
 </br>
-<div id="fb-root"></div>
-<div class="fb-like" data-href="http://severe-flower-1979.herokuapp.com/" data-send="false" data-width="450" data-show-faces="false" data-action="recommend" data-font="verdana"></div>
-<meta property="og:title" content="Friend Prayer" />
-<meta property="og:type" content="blog" />
-<meta property="og:url" content="http://severe-flower-1979.herokuapp.com/" />
-<meta property="og:image" content="http://severe-flower-1979.herokuapp.com/assets/logo-a012c0985dc6e1462f700ae11305e076.png" />
-<meta property="og:site_name" content="friend prayer" />
-<meta property="fb:admins" content="581307214" />
 <div id="user_nav">
   <% if current_user %>
 
@@ -68,11 +77,9 @@
    </div>
    </h2>
   <% else %>
-   <!--<div btn class=" btn btn-success"> 
-   <%= link_to "Sign in with Facebook", "/auth/facebook" %>
-    
-  </div>-->
-
+   	<div class="pull-right">
+   <div class="btn btn-success" data-toggle="modal" href="#myModal">Ayuda?</div>
+   </div>
  
   <% end %>
  
@@ -87,7 +94,25 @@
 </div>
 </body>
 <footer id="footer">
- 
-	<center><a hreh="https://www.friendprayer.org">www.friendprayer.org </a><b3>@2012</b3><center>
+<center><h3><%= link_to "www.friendprayer.org", "https://friendprayer.org" %>||<a data-toggle="modal" href="#modalite"><i>Políticas de uso del sitio</i></a></center></h3>
+
 </footer>
 </html>
+<div class="modal hide" id="modalite">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal">×</button>
+	   <b> Políticas de uso del sitio </b>
+	  </div>
+	  <div class="modal-body">
+	 <p>1) El sitio trae su información de facebook para crear su cuenta.</p>
+	 <p> 2)  Al ingresar en este sitio usted se hace responsable del contenido que publique en él. </p>
+	<p>3) Cualquier clase de contenido  que consideremos no apto será borrado.</p>
+	<p>4) Cualquier amenaza a uno de los miembros de la comunidad traerá la expulsión de la misma.</p>
+			<p> 5) Esta es una comunidad libre para gente que profesa creencias similares, por lo que se le pide si no es parte de ellas abstengase de ingresar.</p>
+	<b><center><p> ¡ Gracias !</p></center></b>
+	  </div>
+	  <div class="modal-footer">
+		<i>  Friend prayer todos los derechos reservados 2012</i>
+	  </div>
+	</div>  
+</div>

@@ -73,7 +73,11 @@
 .pray{
 	width:100;
 }			
-#footer { background:#10B9C2;}
+#footer { background:#10B9C2;
+	     width: 750px; 
+	      margin: auto;
+	     }
+
 #bodyp {
   background-color: #dff0d8;
   border-color: #d6e9c6;

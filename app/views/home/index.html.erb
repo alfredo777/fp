@@ -1,3 +1,21 @@
+<center>
+<div id="bodyp">
+ <div class="modal hide" id="modale">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal">×</button>
+	    Friend prayer
+	  </div>
+	  <div class="modal-body">
+	  <iframe width="520" height="415" src="http://www.youtube.com/embed/ylvGR6VrJaI" frameborder="0" allowfullscreen></iframe>
+	  </div>
+	  <div class="modal-footer">
+	   	<p>Friendprayer.org todos lo derechos reservados</p>
+	   </div>
+	  </div>
+	</div>
+</div>
+	</center>
+
 <div id="name">
 <div class="navbar">
 <div class="navbar-inner">
@@ -20,15 +38,15 @@
       </br>
       </br>
         <center> 
-              <div class=" btn btn-medium btn-warning"> 
-			    <%= link_to "Ingresa con Facebook", "/auth/facebook" %>
+              <div class=" btn btn-medium btn-warning" href="/auth/facebook"> 
+			   <h1> <%= link_to "Ingresa con Facebook", "/auth/facebook" %> </h1>
 
 			   </div>
 		</center>
 		 </br>
 	     </br>
-      <center>
-        <iframe width="420" height="315" src="http://www.youtube.com/embed/ylvGR6VrJaI" frameborder="0" allowfullscreen></iframe>
+      <center>	
+	  	<div class="btn btn-primary" data-toggle="modal" href="#modale"><h1>reproduce el video de friend prayer</h1></div>
       </center> 
      </br>
       </br>

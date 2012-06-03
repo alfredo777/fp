@@ -50,7 +50,7 @@ class PrayersController < ApplicationController
     @prayer.image=current_user.image
     respond_to do |format|
       if @prayer.save
-        format.html { redirect_to @prayer, :notice => 'Prayer was successfully created.' }
+        format.html { redirect_to :back, :notice => 'Prayer was successfully created.' }
         format.json { render :json => @prayer, :status => :created, :location => @prayer }
       else
         format.html { render :action => "new" }
@@ -66,7 +66,7 @@ class PrayersController < ApplicationController
 
     respond_to do |format|
       if @prayer.update_attributes(params[:prayer])
-        format.html { redirect_to @prayer, :notice => 'Prayer was successfully updated.' }
+        format.html { redirect_to :back, :notice => 'Prayer was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }
