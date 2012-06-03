@@ -1,4 +1,4 @@
-
+<body>
 <%= form_for(@prayer=Prayer.new) do |f| %>
  <div class="field">
     <%= f.text_area :pray, :class => "textarea" %>
@@ -27,3 +27,4 @@
 <br />	
 <%= paginate @prayers%>
 </center>
+</body>
