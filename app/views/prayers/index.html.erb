@@ -16,11 +16,41 @@
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 
 <%end%>
-<div class="imput-append">
+<div class="imput-append" style = "padding:10px;">
 <p>
    <% @prayers.each do |prayer|%>
-    <div class="img"><%= image_tag(current_user.image) %> Pray:<%= prayer.pray%> <%= prayer.id %></div>
-   <pre><span  class="label label-important"><%= link_to 'Delete', prayer, :confirm => 'Estas seguro de borrar esta oración?/ Are you shure?', :method => :delete %></span>  <span class="label label-info"><%=link_to 'Comment >>', prayer %></span></pre>
+    <div class="img"><%= image_tag(current_user.image) %> Pray:<%= prayer.pray%> </div>
+ 
+          <% if Rails.env == "production"%>
+          <div class="fb-like" data-href="http://friendprayer.org/prayers/<%= prayer.id %>" data-send="true" data-width="450" data-show-faces="true" data-font="arial"></div>
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=236652113026256";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <%else%>
+          <div class="fb-like" data-href="http://localhost:3000/prayers/<%= prayer.id %>" data-send="true" data-width="450" data-show-faces="true" data-font="arial"></div>
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=220846244674086";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <%end%>
+   <pre>
+     
+     
+     <div class="pull-right"><span  class="label label-important"><%= link_to 'Delete', prayer, :confirm => 'Estas seguro de borrar esta oración?/ Are you shure?', :method => :delete %></span></div>
+      <div class="pull-right"><span class="label label-success"><%= link_to 'Edit', edit_prayer_path(prayer) %></span></div>
+      <div class="pull-right"><span class="label label-info"><%=link_to 'Comment >>', prayer %></span></div>
+     
+</pre>
+  
 <% end %>
 </br>
 </p>

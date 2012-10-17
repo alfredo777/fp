@@ -1,0 +1,21 @@
+<% if Rails.env == "production"%>
+<div class="fb-like" data-href="http://friendprayer.org/prayers/<%= prayer.id %>" data-send="true" data-width="450" data-show-faces="true" data-font="arial"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=236652113026256";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<%else%>
+<div class="fb-like" data-href="http://localhost:3000/prayers/<%= prayer.id %>" data-send="true" data-width="450" data-show-faces="true" data-font="arial"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=220846244674086";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<%end%>

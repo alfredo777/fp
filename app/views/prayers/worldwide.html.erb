@@ -16,15 +16,40 @@
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
 <%end%>
 <p>
+<div class="imput-append" style = "padding:10px;">
+
 <% @prayers.each do |prayer| %>    
-	    <div class="img"> <%= image_tag(prayer.image) %> Pray:<%= prayer.pray %></div>	    	     
-       <pre> By:<%= prayer.name %></pre>
+	    <div class="img"> <%= image_tag(prayer.image) %> Pray:<%= prayer.pray %></div>
+	    <% if Rails.env == "production"%>
+        <div class="fb-like" data-href="http://friendprayer.org/prayers/<%= prayer.id %>" data-send="true" data-width="450" data-show-faces="true" data-font="arial"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=236652113026256";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <%else%>
+        <div class="fb-like" data-href="http://localhost:3000/prayers/<%= prayer.id %>" data-send="true" data-width="450" data-show-faces="true" data-font="arial"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=220846244674086";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <%end%>	    	     
+       <pre> By:<%= prayer.name %>
+       <div class="pull-right"><span class="label label-info"><%=link_to 'Comment >>', prayer %></span></div></pre>
 <% end %>
 </p>
 <br />
 
 </div>
 <center><%= paginate @prayers%></center>
+</div>
 </body>
 <footer id="footer">
 <center><h3><%= link_to "www.friendprayer.org", "https://friendprayer.org" %>||<a data-toggle="modal" href="#modalite"><i>Políticas de uso del sitio</i></a></center></h3>
