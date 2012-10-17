@@ -1,0 +1,32 @@
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<% if Rails.env == "production"%>
+ <script>
+   $(function(){
+
+     $("a#invite_fb_friends").click(function() {
+       FB.init({ 
+          appId:'236652113026256', 
+          cookie:false, 
+          status:true
+       });
+
+       FB.ui({ method: 'apprequests', message: ' <%= current_user.name %> Escribe tus oraciones y recibe las de tus amigos !!'});
+     });
+   });
+ </script>
+ <%else%>
+ <script>
+    $(function(){
+
+      $("a#invite_fb_friends").click(function() {
+        FB.init({ 
+           appId:'220846244674086', 
+           cookie:false, 
+           status:true
+        });
+
+        FB.ui({ method: 'apprequests', message: ' <%= current_user.name %> Escribe tus oraciones y recibe las de tus amigos !!'});
+      });
+    });
+  </script>
+ <%end%>

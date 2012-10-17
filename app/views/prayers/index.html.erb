@@ -2,13 +2,15 @@
 <html>
 <body>
 <%= form_for(@prayer=Prayer.new) do |f| %>
- <div class="field">
-    <%= f.text_area :pray, :class => "textarea" %>
-        
 
-<%=f.submit "Share Pray", :class => "btn btn-info btn-large"%>
-    
- </div>
+ <div class="field">
+<center>
+<%= f.text_area :pray, :class => "textarea" %>
+</center>
+<%=f.submit "Oración", :class => "btn btn-info btn-large"%>
+
+</div>
+
 <div id="name">
 <link rel="stylesheet" href="app/stileshets/reset.css" type="text/css"/>
 <link rel="stylesheet" href="app/stileshets/style.css" type="text/css"/>
@@ -17,8 +19,8 @@
 <div class="imput-append">
 <p>
    <% @prayers.each do |prayer|%>
-    <div class="img"><%= image_tag(current_user.image) %> Pray:<%= prayer.pray%></div>
-   <pre> <div class="btn btn-danger"><%= link_to 'Destroy', prayer, :confirm => 'Are you sure?', :method => :delete %></div></pre>
+    <div class="img"><%= image_tag(current_user.image) %> Pray:<%= prayer.pray%> <%= prayer.id %></div>
+   <pre><span  class="label label-important"><%= link_to 'Delete', prayer, :confirm => 'Estas seguro de borrar esta oración?/ Are you shure?', :method => :delete %></span>  <span class="label label-info"><%=link_to 'Comment >>', prayer %></span></pre>
 <% end %>
 </br>
 </p>

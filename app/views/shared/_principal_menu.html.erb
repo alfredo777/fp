@@ -1,0 +1,11 @@
+    <ul class="nav nav-tabs">
+        <li id="prayers" ><%= link_to "Prayers", prayers_path %></li>
+        <li id="worldwide"><%= link_to "World Wide", worldwide_path %></li>
+        <!--<li id="settings"><a href="worldwide" class="activeprayers">Worldwide</a></li>-->
+        <li id="donate"><%= link_to "Donate", donate_path %></li>
+        <% if current_user%>
+        <li ><a><%= link_to "Salir", "/signout" %></a></li>   
+        <%end%>
+    </ul>
+    </br>
+    </br>

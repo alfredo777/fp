@@ -3,11 +3,13 @@
 <body>
 <%= form_for(@prayer=Prayer.new) do |f| %>
  <div class="field">
-    <%= f.text_area :pray, :class => "textarea"%>
+ <center>
+ <%= f.text_area :pray, :class => "textarea" %>
+ </center>
+ <%=f.submit "Oración", :class => "btn btn-info btn-large"%>
+
+ </div>
  
- 
-<%=f.submit "Share Pray",:class => "btn btn-info btn-large" %>
-</div>
 <div id="name">
 
 <link rel="stylesheet" href="app/stileshets/reset.css" type="text/css"/>

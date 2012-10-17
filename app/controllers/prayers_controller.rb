@@ -17,11 +17,6 @@ class PrayersController < ApplicationController
   # GET /prayers/1.json
   def show
     @prayer = Prayer.find(params[:id])
-     prayers_url
-    respond_to do |format|
-      format.html {redirect_to prayers_url }
-      format.json { render :json => @prayer }
-    end
   end
 
   # GET /prayers/new

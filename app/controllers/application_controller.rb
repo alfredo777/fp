@@ -1,10 +1,12 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+     helper_method  :users
     helper_method :current_user
        helper_method :current_user_name
        helper_method :current_user_image
        helper_method :current_user_id
        helper_method :current_user_uid
+       helper_method :current_pray
     before_filter :authorize
    
   
@@ -17,6 +19,13 @@ class ApplicationController < ActionController::Base
     
   end
        
+  def users
+     @users = User.all
+   end
+   
+   def current_pray
+     @prayer = Prayer.find(params[:id])
+   end
        
   def not_authenticated
     redirect_to root_url, :alert => "First login to access this page."

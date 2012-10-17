@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  
    def new
     @user = User.new(params[:user])
    
@@ -9,6 +10,9 @@ class UsersController < ApplicationController
       format.json { render :json => @user }
     end
   end
+  
+ 
+  
   #def 
  
 end

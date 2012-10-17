@@ -9,10 +9,10 @@
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "boostrap-modal" %>
   <%= csrf_meta_tags %>
-  <%= favicon_link_tag "/favicon.ico" %>
+  <%= favicon_link_tag "favicon.ico" %>
 
 </head>
-<div class="alert alert-info"><%= notice %>
+<div class="alert alert-block"><%= notice %>
 </div>
 </div>
 <div id="container2">
@@ -21,44 +21,18 @@
 <div id="slogan"><h2>Now you can easily share prayers with your friends all over the world!</h2><a href=""><%=link_to image_tag("slogan.png")%></a></div>
 </div>
 <div id="navs">
-<ul class="nav nav-tabs">
-<li id="prayers" ><a href="prayers">Prayers</a></li>
-<li id="worldwide"><a href="worldwide">Worldwide</a></li>
-<!--<li id="settings"><a href="worldwide" class="activeprayers">Worldwide</a></li>-->
-<li id="donate"><a href="donate">Donate</a></li>
-</ul></br>
-</br>
-<div id="user_nav">
+    <%= render :partial => "shared/principal_menu"%>
+  <div id="user_nav">
   <% if current_user %>
 
-   <h2> Welcome: <%= current_user.name %>! 
-	<div btn class=" btn btn-danger"> 
-	<%= link_to "Salir", "/signout" %>   
-	</div>     
+    <h2> Welcome: <%= current_user.name %>! 
    	<div class=" btn btn-info">
    	<div id="friends">
-     <p><%= link_to "Invite Friends", "#", :id => "invite_fb_friends"  %></p>
+     <p><%= link_to "Invite ++", "#", :id => "invite_fb_friends"  %></p>
                      
      <div id="fb-root"></div>
-
-     <script src="http://connect.facebook.net/en_US/all.js"></script>
-
-     <script>
-       $(function(){
-
-         $("a#invite_fb_friends").click(function() {
-           FB.init({ 
-              appId:'236652113026256', 
-              cookie:false, 
-              status:true
-           });
-
-           FB.ui({ method: 'apprequests', message: ' <%= current_user.name %> Escribe tus oraciones y recibe las de tus amigos !!'});
-         });
-       });
-     </script>
-    
-   </div>
+     <%= render :partial => "shared/invite_friends"%>
+    </div>
    </h2>
   <% else %>
    	<div class="pull-right">
@@ -78,39 +52,5 @@
 
 </body>
 </html>
-<div class="modal hide" id="myModal">
-	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal">×</button>
-	   <b> Instrucciones</b>
-	  </div>
-	  <div class="modal-body">
-	 <p>1) Da click en el botón ingresar con facebook.</p>
-	 <p>  2) Ingresando en la sesión puedes colocar oraciones que aparecerán en tu perfil y en el worldwide. </p>
-	<p> 3) Las personas en la comunidad verán la oración y pedirán por ti.
-		</p>
-	  </div>
-	  <div class="modal-footer">
-	   	<div btn class=" btn btn-warning"> 
-		   <%= link_to "Ingresa con Facebook", "/auth/facebook" %>
-	   </div>
-	  </div>
-	</div>
-</div>
-<div class="modal hide" id="modalite">
-	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal">×</button>
-	   <b> Políticas de uso del sitio </b>
-	  </div>
-	  <div class="modal-body">
-	 <p>1) El sitio trae su información de facebook para crear su cuenta.</p>
-	 <p> 2)  Al ingresar en este sitio usted se hace responsable del contenido que publique en él. </p>
-	<p>3) Cualquier clase de contenido  que consideremos no apto será borrado.</p>
-	<p>4) Cualquier amenaza a uno de los miembros de la comunidad traerá la expulsión de la misma.</p>
-			<p> 5) Esta es una comunidad libre para gente que profesa creencias similares, por lo que se le pide si no es parte de ellas abstengase de ingresar.</p>
-	<b><center><p> ¡ Gracias !</p></center></b>
-	  </div>
-	  <div class="modal-footer">
-		<i>  Friend prayer todos los derechos reservados 2012</i>
-	  </div>
-	</div>  
-</div>
+   <%= render :partial => "shared/modals_layout"%>
+ </div>

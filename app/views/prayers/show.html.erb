@@ -1,11 +1,15 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Pray:</b>
-  <%= @prayer.pray %>
-  
-</p>
 
 
-<%= link_to 'Edit', edit_prayer_path(@prayer) %> |
-<%= link_to 'Back', prayers_path %>
+    <p id="notice"><%= notice %></p>
+
+    <p>
+        <div class="comments" style="margin-left:35px;">
+            <%= @prayer.pray %></br></br>
+            <%= render :partial => "shared/like_share"%>  
+        </div>
+      <%= render :partial => "shared/comments"%>
+    </p>
+
+
+        <%= link_to 'Edit', edit_prayer_path(@prayer) %> |
+        <%= link_to 'Back', prayers_path %>
