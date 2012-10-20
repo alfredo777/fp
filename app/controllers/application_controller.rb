@@ -15,10 +15,14 @@ class ApplicationController < ActionController::Base
   private
   
   def redirect_https  
-    if Rails.env == "production"      
-         redirect_to :protocol => "https://friendprayer.org/" unless request.ssl?
-         return false
+    if Rails.env == "production"
+         if !request.ssl?      
+         redirect_to :protocol => "https" 
+         end
     else
+       # if !request.ssl?
+        #redirect_to :protocol => "https"
+      # end
       
     end
   end
