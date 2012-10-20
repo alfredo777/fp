@@ -4,7 +4,7 @@ Fp::Application.routes.draw do
 
   resources :prayers
     
-    
+  
   #get routes  
   get "worldwide"=> "prayers#worldwide"
   get "home/index"

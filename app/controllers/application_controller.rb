@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
+  
   protect_from_forgery
-     helper_method  :users
+    before_filter :redirect_https
+    helper_method  :users
     helper_method :current_user
        helper_method :current_user_name
        helper_method :current_user_image
@@ -12,6 +14,15 @@ class ApplicationController < ActionController::Base
   
   private
   
+  def redirect_https  
+    if Rails.env == "production"      
+         redirect_to :protocol => "https://friendprayer.org/" unless request.ssl?
+         return false
+    else
+      
+    end
+  end
+      
  
   def current_user
     

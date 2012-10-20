@@ -1,4 +1,5 @@
 class PrayersController < ApplicationController
+  skip_before_filter :redirect_https
    # GET /prayers
   # GET /prayers.json
   def index

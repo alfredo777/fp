@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+   skip_before_filter :redirect_https
    def new
     @user = User.new(params[:user])
    
